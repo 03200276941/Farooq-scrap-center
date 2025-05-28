@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farooq Scrap Center | Premium Scrap Buyers | AC, Electronics, Metal & More</title>
+    <meta name="description" content="Get top prices for all types of scrap - AC units, electronics, metal, batteries. Fast, reliable service with free pickup for bulk quantities.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Poppins', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        secondary: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            300: '#fdba74',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        },
+                        dark: '#1a1a1a',
+                        light: '#f8fafc',
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 24px rgba(0, 0, 0, 0.06)',
+                        'hard': '0 4px 24px rgba(0, 0, 0, 0.12)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(34,197,94,0.1) 0%, rgba(249,115,22,0.1) 100%);
+        }
+        .hero-pattern {
+            background-image: radial-gradient(rgba(34, 197, 94, 0.15) 1px, transparent 1px);
+            background-size: 16px 16px;
+        }
+        .scroll-mt-100 {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center group">
+                <div class="w-10 h-10 rounded-lg bg-primary-600 flex items-center justify-center mr-3 group-hover:rotate-[20deg] transition-transform duration-300">
+                    <i class="fas fa-recycle text-white text-lg"></i>
+                </div>
+                <h1 class="text-xl font-bold">
+                    <span class="text-primary-600">Farooq</span> 
+                    <span class="text-dark">Scrap Center</span>
+                </h1>
+            </a>
+            
+            <nav class="hidden lg:flex items-center space-x-1">
+                <a href="#home" class="px-4 py-2 font-medium text-gray-600 hover:text-primary-600 transition-colors">Home</a>
+                <a href="#services" class="px-4 py-2 font-medium text-gray-600 hover:text-primary-600 transition-colors">Services</a>
+                <a href="#process" class="px-4 py-2 font-medium text-gray-600 hover:text-primary-600 transition-colors">Our Process</a>
+                <a href="#pricing" class="px-4 py-2 font-medium text-gray-600 hover:text-primary-600 transition-colors">Pricing</a>
+                <a href="#testimonials" class="px-4 py-2 font-medium text-gray-600 hover:text-primary-600 transition-colors">Reviews</a>
+                <a href="#contact" class="ml-4 px-5 py-2.5 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors">
+                    Sell Now
+                </a>
+            </nav>
+            
+            <button class="lg:hidden text-2xl text-gray-600" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white py-2 px-4 border-t border-gray-100" id="mobile-menu">
+            <div class="flex flex-col space-y-2 py-2">
+                <a href="#home" class="px-3 py-2 font-medium text-gray-600 hover:text-primary-600 transition-colors">Home</a>
+                <a href="#services" class="px-3 py-2 font-medium text-gray-600 hover:text-primary-600 transition-colors">Services</a>
+                <a href="#process" class="px-3 py-2 font-medium text-gray-600 hover:text-primary-600 transition-colors">Our Process</a>
+                <a href="#pricing" class="px-3 py-2 font-medium text-gray-600 hover:text-primary-600 transition-colors">Pricing</a>
+                <a href="#testimonials" class="px-3 py-2 font-medium text-gray-600 hover:text-primary-600 transition-colors">Reviews</a>
+                <a href="#contact" class="mt-2 px-4 py-2.5 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors text-center">
+                    Sell Your Scrap
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 pb-20 hero-pattern">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-10">
+                    <div class="inline-block px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
+                        <i class="fas fa-bolt mr-1"></i> Premium Scrap Buyers
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-5">
+                        Get <span class="text-primary-600">Top Prices</span> For Your 
+                        <span class="text-secondary-600">Scrap Materials</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        We purchase all types of scrap materials including AC units, electronics, metal, batteries and more. 
+                        Instant quotes, free pickup, and immediate payment.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3.5 px-6 rounded-lg text-center transition-colors shadow-md">
+                            <i class="fas fa-coins mr-2"></i> Get Instant Quote
+                        </a>
+                        <a href="tel:+919876543210" class="border border-gray-300 hover:border-primary-300 text-dark font-medium py-3.5 px-6 rounded-lg text-center transition-colors bg-white shadow-sm">
+                            <i class="fas fa-phone-alt mr-2"></i> Call Now
+                        </a>
+                    </div>
+                    
+                    <div class="mt-10 flex items-center space-x-6">
+                        <div class="flex -space-x-2">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Happy customer">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/75.jpg" alt="Happy customer">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/90.jpg" alt="Happy customer">
+                        </div>
+                        <div>
+                            <div class="flex items-center">
+                                <div class="flex text-amber-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="ml-2 text-gray-600 text-sm">5.0 (1,200+ reviews)</span>
+                            </div>
+                            <p class="text-gray-600 text-sm mt-1">Trusted by businesses and homeowners</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute -top-6 -left-6 w-64 h-64 bg-primary-100 rounded-2xl -z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1584839404049-9799e4ff60cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Scrap collection service" 
+                             class="rounded-2xl shadow-hard w-full max-w-2xl border-8 border-white">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-soft max-w-xs">
+                            <div class="flex items-center">
+                                <div class="bg-primary-100 text-primary-600 p-2 rounded-lg mr-3">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <p class="font-medium">Free pickup for bulk quantities above 50kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-8 bg-white border-y border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-shield-alt text-3xl text-primary-500 mr-3"></i>
+                    <span class="font-medium">Licensed & Certified</span>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-hand-holding-usd text-3xl text-primary-500 mr-3"></i>
+                    <span class="font-medium">Best Price Guarantee</span>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-truck text-3xl text-primary-500 mr-3"></i>
+                    <span class="font-medium">Free Pickup Service</span>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-clock text-3xl text-primary-500 mr-3"></i>
+                    <span class="font-medium">Same Day Payment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 scroll-mt-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">What <span class="text-primary-600">We Purchase</span></h2>
+                <p class="text-gray-600">We buy all types of scrap materials at competitive market prices. Here are our most requested categories:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-soft hover:shadow-hard transition-shadow duration-300 border border-gray-100">
+                    <div class="w-14 h-14 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center text-2xl mb-5">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AC Units & Refrigerators</h3>
+                    <p class="text-gray-600 mb-4">All types and brands of air conditioners, refrigerators, freezers, and cooling systems.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Split AC</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Window AC</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Fridge</span>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-soft hover:shadow-hard transition-shadow duration-300 border border-gray-100">
+                    <div class="w-14 h-14 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center text-2xl mb-5">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Electronic Waste</h3>
+                    <p class="text-gray-600 mb-4">Computers, TVs, mobile phones, printers, and all other electronic devices.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Laptops</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">TVs</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Phones</span>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-soft hover:shadow-hard transition-shadow duration-300 border border-gray-100">
+                    <div class="w-14 h-14 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center text-2xl mb-5">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Batteries</h3>
+                    <p class="text-gray-600 mb-4">Car batteries, inverter batteries, UPS batteries, and industrial batteries.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Car</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Inverter</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Industrial</span>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-soft hover:shadow-hard transition-shadow duration-300 border border-gray-100">
+                    <div class="w-14 h-14 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center text-2xl mb-5">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Metal Scrap</h3>
+                    <p class="text-gray-600 mb-4">Iron, steel, copper, aluminum, brass, and all other metal materials.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Copper</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Aluminum</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Steel</span>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-soft hover:shadow-hard transition-shadow duration-300 border border-gray-100">
+                    <div class="w-14 h-14 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center text-2xl mb-5">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Electrical Items</h3>
+                    <p class="text-gray-600 mb-4">Wires, cables, motors, transformers, and all electrical components.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Wires</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Motors</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Cables</span>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-soft hover:shadow-hard transition-shadow duration-300 border border-gray-100">
+                    <div class="w-14 h-14 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center text-2xl mb-5">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Other Materials</h3>
+                    <p class="text-gray-600 mb-4">Plastic, paper, household items, and other recyclable materials.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Plastic</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Paper</span>
+                        <span class="px-3 py-1 bg-primary-50 text-primary-600 text-sm rounded-full">Furniture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-primary-50 scroll-mt-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our <span class="text-primary-600">Simple Process</span></h2>
+                <p class="text-gray-600">Selling your scrap has never been easier. Just follow these 4 simple steps:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-soft text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-2xl mb-5 mx-auto">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Contact Us</h3>
+                    <p class="text-gray-600">Call us, message on WhatsApp, or fill our online form with your scrap details.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-soft text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-2xl mb-5 mx-auto">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Get a Price</h3>
+                    <p class="text-gray-600">We'll provide you with a fair price quote based on current market rates.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-soft text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-2xl mb-5 mx-auto">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Book a Pickup</h3>
+                    <p class="text-gray-600">We’ll come to your place at your chosen time (free pickup for bulk scrap).</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-soft text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-2xl mb-5 mx-auto">
+                        <span class="font-bold">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3"> Get Paid</h3>
+                    <p class="text-gray-600">We’ll pay you instantly by cash, bank transfer, or UPI on the spot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 scroll-mt-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">Current <span class="text-primary-600">Scrap Prices</span></h2>
+                <p class="text-gray-600">Our prices are updated daily based on market rates. Last updated: <span class="font-medium" id="current-date"></span></p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-xl shadow-soft overflow-hidden">
+                    <thead class="bg-primary-600 text-white">
+                        <tr>
+                            <th class="py-4 px-6 text-left">Material</th>
+                            <th class="py-4 px-6 text-left">Category</th>
+                            <th class="py-4 px-6 text-right">Price Range (per kg)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="hover:bg-primary-50 transition-colors">
+                            <td class="py-4 px-6 font-medium">Copper</td>
+                            <td class="py-4 px-6 text-gray-600">Metal</td>
+                            <td class="py-4 px-6 text-right font-medium">N/A</td>
+                        </tr>
+                        <tr class="hover:bg-primary-50 transition-colors">
+                            <td class="py-4 px-6 font-medium">Aluminum</td>
+                            <td class="py-4 px-6 text-gray-600">Metal</td>
+                            <td class="py-4 px-6 text-right font-medium">N/A</td>
+                        </tr>
+                        <tr class="hover:bg-primary-50 transition-colors">
+                            <td class="py-4 px-6 font-medium">AC Units</td>
+                            <td class="py-4 px-6 text-gray-600">Electronic</td>
+                            <td class="py-4 px-6 text-right font-medium">N/A</td>
+                        </tr>
+                        <tr class="hover:bg-primary-50 transition-colors">
+                            <td class="py-4 px-6 font-medium">Car Batteries</td>
+                            <td class="py-4 px-6 text-gray-600">Battery</td>
+                            <td class="py-4 px-6 text-right font-medium">N/A</td>
+                        </tr>
+                        <tr class="hover:bg-primary-50 transition-colors">
+                            <td class="py-4 px-6 font-medium">Iron/Steel</td>
+                            <td class="py-4 px-6 text-gray-600">Metal</td>
+                            <td class="py-4 px-6 text-right font-medium">N/A</td>
+                        </tr>
+                        <tr class="hover:bg-primary-50 transition-colors">
+                            <td class="py-4 px-6 font-medium">Plastic</td>
+                            <td class="py-4 px-6 text-gray-600">Other</td>
+                            <td class="py-4 px-6 text-right font-medium">N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-6 text-sm text-gray-500">
+                *Price depends on AC type (window/split), brand, and condition
+            </div>
+            
+            <div class="mt-12 bg-primary-50 border border-primary-100 rounded-xl p-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-2/3 mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold mb-2">Need an exact quote for your materials?</h3>
+                        <p class="text-gray-600">Send us details and photos of your scrap for an accurate price estimate.</p>
+                    </div>
+                    <div class="md:w-1/3 md:text-right">
+                        <a href="#contact" class="inline-block bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors">
+                            Get Custom Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-primary-900 text-white scroll-mt-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">What Our <span class="text-primary-300">Customers Say</span></h2>
+                <p class="text-primary-200">Don't just take our word for it - hear from our satisfied customers</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-primary-800 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-sm text-primary-300">1 weeks ago</span>
+                    </div>
+                    <p class="mb-6">"Farooq Scrap Center provided a seamless pickup and disposal process for our outdated electronics. Their team was efficient, courteous, and fully transparent from start to finish."</p>
+                    <div class="flex items-center">
+                        <img class="w-10 h-10 rounded-full mr-3" src="https://successpediainternational.com/wp-content/uploads/2023/01/hamza-tabani.jpg" alt="Rajesh Kumar">
+                        <div>
+                            <p class="font-medium">Mr. Humza Yaqoob Tabani</p>
+                            <p class="text-sm text-primary-300">Tabani Group</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-primary-800 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-sm text-primary-300">1 month ago</span>
+                    </div>
+                    <p class="mb-6">"I had a large quantity of electronic waste from my office renovation. They provided free pickup and the best rates in the market. Very transparent weighing process."</p>
+                    <div class="flex items-center">
+                        <img class="w-10 h-10 rounded-full mr-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDQviWu6POffnIIQLf4payfMatBUiRhS9fKg&s" alt="Priya Sharma">
+                        <div>
+                            <p class="font-medium">Haji Muhammad Rafiq Pardesi</p>
+                            <p class="text-sm text-primary-300">HMR Waterfront.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-primary-800 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-sm text-primary-300">3 days ago</span>
+                    </div>
+                    <p class="mb-6">"We chose Farooq Scrap Center based on their reputation — and they exceeded expectations. The entire process was efficient, fair, and environmentally responsible."</p>
+                    <div class="flex items-center">
+                        <img class="w-10 h-10 rounded-full mr-3" src="https://www.aishasteel.com/wp-content/uploads/2022/09/Arif-Habib.jpg" alt="Amit Patel">
+                        <div>
+                            <p class="font-medium">Mr. Arif Habib</p>
+                            <p class="text-sm text-primary-300">Chairman, Arif Habib Group
+
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 scroll-mt-100 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-hard overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-primary-600 text-white p-8 md:p-12">
+                        <h2 class="text-3xl font-bold mb-4">Sell Your Scrap Today</h2>
+                        <p class="mb-6">Fill out this form and we'll contact you within 30 minutes with a quote.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-phone-alt text-primary-200"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="font-medium">Call Us</h4>
+                                    <a href="tel:+919876543210" class="text-primary-100 hover:text-white">03062664430</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-envelope text-primary-200"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="font-medium">Email Us</h4>
+                                    <a href="mailto:contact@farooqscrap.com" class="text-primary-100 hover:text-white">Bakhtawark085@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-map-marker-alt text-primary-200"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="font-medium">Our Location</h4>
+                                    <p class="text-primary-100">Plot no 457 lasbella House Garden East Karachi </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <form id="scrapForm" class="space-y-6">
+                            <div>
+                                <label for="full-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                                <input type="text" id="full-name" name="full-name" required 
+                                       class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required 
+                                       class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" name="email" 
+                                       class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            
+                            <div>
+                                <label for="scrap-type" class="block text-sm font-medium text-gray-700 mb-1">Scrap Type *</label>
+                                <select id="scrap-type" name="scrap-type" required 
+                                        class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                                    <option value="">Select scrap type</option>
+                                    <option value="ac">AC Units</option>
+                                    <option value="electronics">Electronic Items</option>
+                                    <option value="batteries">Batteries</option>
+                                    <option value="metal">Metal Scrap</option>
+                                    <option value="electrical">Electrical Items</option>
+                                    <option value="other">Other Materials</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="quantity" class="block text-sm font-medium text-gray-700 mb-1">Approximate Quantity</label>
+                                <input type="text" id="quantity" name="quantity" placeholder="e.g., 2 AC units, 50kg copper, etc." 
+                                       class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            
+                            <div>
+                                <label for="location" class="block text-sm font-medium text-gray-700 mb-1">Location *</label>
+                                <input type="text" id="location" name="location" required 
+                                       class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Additional Details</label>
+                                <textarea id="message" name="message" rows="3" 
+                                          class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"></textarea>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" 
+                                        class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors">
+                                    Request Quote Now
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">Frequently <span class="text-primary-600">Asked Questions</span></h2>
+                <p class="text-gray-600">Find answers to common questions about selling your scrap materials</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-medium hover:bg-gray-50 transition-colors">
+                        <span>What types of scrap do you accept?</span>
+                        <i class="fas fa-chevron-down text-primary-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 pt-0 text-gray-600">
+                        We accept all types of scrap materials including AC units, refrigerators, electronic waste (computers, TVs, phones), metal scrap (copper, aluminum, steel), batteries, electrical items, and other recyclable materials like plastic and paper.
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-medium hover:bg-gray-50 transition-colors">
+                        <span>How do you determine the price for my scrap?</span>
+                        <i class="fas fa-chevron-down text-primary-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 pt-0 text-gray-600">
+                        Prices are based on current market rates, which fluctuate daily. We consider the type of material, quantity, purity (for metals), and condition of the items. For accurate pricing, we need to physically inspect and weigh your materials.
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-medium hover:bg-gray-50 transition-colors">
+                        <span>Do you offer free pickup service?</span>
+                        <i class="fas fa-chevron-down text-primary-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 pt-0 text-gray-600">
+                        Yes, we provide free pickup for bulk quantities (typically above 50kg or for large items like AC units). For smaller quantities, a nominal pickup charge may apply depending on your location.
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-medium hover:bg-gray-50 transition-colors">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down text-primary-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 pt-0 text-gray-600">
+                        We offer multiple payment options including cash, UPI (PhonePe, Google Pay, Paytm), and bank transfers. Payment is made immediately upon collection of your scrap materials.
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-medium hover:bg-gray-50 transition-colors">
+                        <span>Are you licensed to handle electronic waste?</span>
+                        <i class="fas fa-chevron-down text-primary-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 pt-0 text-gray-600">
+                        Yes, Farooq Scrap Center is fully licensed and certified to handle all types of electronic waste (e-waste) in compliance with government regulations. We ensure all e-waste is disposed of or recycled in an environmentally responsible manner.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Sell Your Scrap?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Get the best prices and service in the city. Contact us today for a free, no-obligation quote.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-primary-600 font-medium py-3.5 px-8 rounded-lg transition-colors shadow-md">
+                    <i class="fas fa-coins mr-2"></i> Get Instant Quote
+                </a>
+                <a href="tel:+919876543210" class="bg-primary-700 hover:bg-primary-800 font-medium py-3.5 px-8 rounded-lg transition-colors shadow-md">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now: +91 98765 43210
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <!-- Column 1 -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-recycle text-2xl text-primary-400 mr-2"></i>
+                        <h3 class="text-xl font-bold text-white">Farooq <span class="text-primary-400">Scrap Center</span></h3>
+                    </div>
+                    <p class="mb-4">Your trusted partner for scrap buying and recycling services with fair pricing and reliable service.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-primary-400 transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-primary-400 transition-colors">Our Services</a></li>
+                        <li><a href="#process" class="hover:text-primary-400 transition-colors">Our Process</a></li>
+                        <li><a href="#pricing" class="hover:text-primary-400 transition-colors">Current Prices</a></li>
+                        <li><a href="#testimonials" class="hover:text-primary-400 transition-colors">Customer Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-primary-400 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">AC Scrap Buying</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Electronic Waste</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Metal Scrap</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Battery Recycling</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Electrical Scrap</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Other Materials</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Contact Info</h4>
+                    <address class="not-italic">
+                        <div class="flex items-start mb-3">
+                            <i class="fas fa-map-marker-alt text-primary-400 mt-1 mr-3"></i>
+                            <p>Plot No 457 Lasbella House Karachi No 5 </p>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-phone-alt text-primary-400 mr-3"></i>
+                            <a href="tel:+919876543210" class="hover:text-primary-400 transition-colors">03200276941</a><br>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-envelope text-primary-400 mr-3"></i>
+                            <a href="mailto:contact@farooqscrap.com" class="hover:text-primary-400 transition-colors">Bakhtawrk085@gmail.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-primary-400 mr-3"></i>
+                            <p>Mon-Sat: 8:00 AM - 7:00 PM</p>
+                        </div>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>&copy; <span id="current-year"></span> Farooq Scrap Center. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919876543210" class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-xl hover:bg-[#128C7E] transition-colors z-40" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-24 right-6 bg-gray-700 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-xl hover:bg-gray-600 transition-colors z-40 hidden" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+      
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Form submission
+        document.getElementById('scrapForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('full-name').value;
+            const phone = document.getElementById('phone').value;
+            const scrapType = document.getElementById('scrap-type').value;
+            
+            // Show success message
+            alert(`Thank you ${name}! We've received your request for ${scrapType} scrap. Our team will contact you at ${phone} within 30 minutes.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Set current date in pricing section
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-IN', options);
+    </script>
+</body>
+</html>
